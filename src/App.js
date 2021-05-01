@@ -64,6 +64,11 @@ function App() {
         <Link to="/signUp">Sign UP</Link>
       </nav>
       <Switch>
+      <Route path="/22-authentification">
+          <div className="App">
+            <Link to="/signUp">Sign UP</Link>
+          </div>
+        </Route>
         <Route path="/" exact>
           <div className="App">
             <Link to="/signUp">Sign UP</Link>
