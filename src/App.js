@@ -60,6 +60,9 @@ function App() {
 
   return (
     <Router>
+      <nav>
+        <Link to="/signUp">Sign UP</Link>
+      </nav>
       <Switch>
         <Route path="/" exact>
           <div className="App">
