@@ -11,7 +11,12 @@ function App() {
   //   password: "a",
   // };
 
-  const [user, setUser] = useState({ name: "", email: "", password: "", hoho: "Hello" });
+  const [user, setUser] = useState({
+    name: "",
+    email: "",
+    password: "",
+    updatesViaEmail: false
+  });
   const [error, setError] = useState("");
   const [userA, setUserA] = useState({
     password: "",
@@ -44,6 +49,7 @@ function App() {
       password: details.password,
       email: details.email,
       name: details.name,
+      updatesViaEmail: details.updatesViaEmail
     });
   };
   console.log("user from signUp:", user);
@@ -60,13 +66,15 @@ function App() {
 
   return (
     <Router>
-      <nav>
-        <Link to="/signUp">Sign UP</Link>
-      </nav>
       <Switch>
-      <Route path="/22-authentification">
+        <Route path="/22-authentification">
           <div className="App">
-            <Link to="/signUp">Sign UP</Link>
+            <div className='link'>
+            <Link to="/signIn">Sign In</Link>
+            </div>
+            <div className='link'>
+            <Link to="/signUp">Sign Up</Link>
+            </div>
           </div>
         </Route>
         <Route path="/" exact>
@@ -74,22 +82,21 @@ function App() {
             <Link to="/signUp">Sign UP</Link>
           </div>
         </Route>
-        <Route path="/signUp">
-          {" "}
+        <Route path="/signIn">
           <div className="App">
-            {loggedIn.isLoggedIn ? (
+            {loggedIn.isLoggedIn && user.email !== "" ? (
               <div className="welcome">
                 <Welcome user={user} Logout={Logout}></Welcome>
               </div>
             ) : (
               <div>
-                <SignUp GetUser={GetUser} />
+                <SignIn LoginIn={LoginIn} error={error}></SignIn>
               </div>
             )}
           </div>
         </Route>
-        <Route path="/signIn">
-          <SignIn LoginIn={LoginIn} error={error}></SignIn>
+        <Route path="/signUp">
+          <SignUp GetUser={GetUser} />
         </Route>
         <Route path="*">
           <NoPathFound></NoPathFound>

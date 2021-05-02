@@ -66,6 +66,10 @@ form .form-inner .form-group {
     transition: 0.4s;
 }
 
+.form-group p {
+    margin-top: 40px;
+}
+
 .form-inner .form-group:focus-within label {
     color: #FE4880;
 }
@@ -130,4 +134,9 @@ form .form-inner input[type="submit"]:hover,
     display: flex;
     align-items: center;
     gap: 5px;
+    width: 300px;
+}
+
+.link {
+    margin: 10px;
 }
