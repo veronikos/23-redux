@@ -17,7 +17,7 @@
     font-size: 15px;
     padding: 10px 15px;
     border-radius: 8px;
-    background-image: linear-gradient(to left, #FFCE00 50%, #FFCE00 50%, #FE4880);
+    background-image: linear-gradient(to right, #3d9105 50%, #5deb41);
     background-size: 200%;
     background-position: 0%;
     transition: 0.4s;
@@ -45,4 +45,8 @@
 
 .input:focus {
     box-shadow: 0 0 3px rdba(0, 0, 0, 0.2);
+}
+
+.p {
+    padding-bottom: 5px;
 }

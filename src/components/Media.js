@@ -40,7 +40,6 @@ function Media() {
       image={post.image}
     />
     ))}
-    
     </>
   );
 }

@@ -49,3 +49,17 @@
   width: 100px;
   text-align: center;
 }
+
+.p {
+  display: flex;
+  gap: 5px;
+  align-items: baseline;
+}
+
+.social {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+  padding-top: 10px;
+}
