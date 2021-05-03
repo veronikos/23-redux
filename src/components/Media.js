@@ -1,12 +1,12 @@
 import { PageHeader } from "./media-page/Page-header"
-import "./media-page/App.css";
+import "./media-page/Media.css";
 import React from "react";
 import Post from "./media-page/Post";
 
 const postContent = [
   {
     author: {
-      name: "Anakin skywalker",
+      name: "Anakin Skywalker",
       photo:
         "https://upload.wikimedia.org/wikipedia/en/thumb/7/74/Anakin-Jedi.jpg/220px-Anakin-Jedi.jpg",
       nickname: "@dart_vader",
