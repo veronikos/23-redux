@@ -1,5 +1,4 @@
 import { PageHeader } from "./media-page/Page-header"
-import "./media-page/Media.css";
 import React from "react";
 import Post from "./media-page/Post";
 
