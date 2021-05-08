@@ -45,7 +45,7 @@ const reducer = (state = initialState, action) => {
         console.log("add_posts", state.posts)
         return {
           ...state,
-          posts: [...state.posts, action.payload],
+          posts: [action.payload, ...state.posts],
         };
     default:
       return state;
