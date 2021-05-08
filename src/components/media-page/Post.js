@@ -16,15 +16,15 @@ export default function Post(props) {
         <div className={classNames(social)}>
           <div className={classNames(p)}>
             <i class="fa fa-heart"></i>
-            <p>1</p>
+            <p>0</p>
           </div>
           <div className={classNames(p)}>
           <i class="fa fa-comment"></i>
-            <p>1</p>
+            <p>0</p>
           </div>
           <div className={classNames(p)}>
           <i class="fa fa-retweet"></i>
-            <p>1</p>
+            <p>0</p>
           </div>
         </div>
       </div>
